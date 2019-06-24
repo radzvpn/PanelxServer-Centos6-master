@@ -181,14 +181,14 @@ service php-fpm restart
 service nginx restart
 
 # install openvpn
-wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6/openvpn-debian.tar"
+wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/openvpn-debian.tar"
 cd /etc/openvpn/
 tar xf openvpn.tar
-wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6/1194-centos.conf"
+wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/1194-centos.conf"
 if [ "$OS" == "x86_64" ]; then
-  wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6/1194-centos64.conf"
+  wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/1194-centos64.conf"
 fi
-wget -O /etc/iptables.up.rules "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6/iptables.up.rules"
+wget -O /etc/iptables.up.rules "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/iptables.up.rules"
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.local
 sed -i '$ i\iptables-restore < /etc/iptables.up.rules' /etc/rc.d/rc.local
 MYIP=`dig +short myip.opendns.com @resolver1.opendns.com`;
@@ -204,7 +204,7 @@ cd
 
 # configure openvpn client config
 cd /etc/openvpn/
-wget -O /etc/openvpn/1194-client.ovpn "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6/open-vpn.conf"
+wget -O /etc/openvpn/1194-client.ovpn "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/open-vpn.conf"
 sed -i $MYIP2 /etc/openvpn/1194-client.ovpn;
 PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
 useradd -M -s /bin/false Radz
@@ -355,8 +355,8 @@ chkconfig squid on
 
 # install stunnel
 #yum install stunnel
-#wget -O /etc/pki/tls/certs/stunnel.pem "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/updates/stunnel.pem"
-#wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/updates/stunnel.conf"
+#wget -O /etc/pki/tls/certs/stunnel.pem "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/stunnel.pem"
+#wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/stunnel.conf"
 #mkdir /var/run/stunnel
 #chown nobody:nobody /var/run/stunnel
 #stunnel /etc/stunnel/stunnel.conf
@@ -425,7 +425,7 @@ yum -y install bmon
 
 # download script
 cd
-wget https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/updates/install-premiumscripts.sh -O - -o /dev/null|sh
+wget https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/install-premiumscripts.sh -O - -o /dev/null|sh
 
 # cron
 service crond start
@@ -460,10 +460,8 @@ echo " "
 echo "INSTALLATION COMPLETE!"
 echo " "
 echo "--------------------------- Setup Server Information ---------------------------"
-echo "                         Copyright HostingTermurah.net                          "
-echo "                        https://www.hostingtermurah.net                         "
-echo "               Created By Steven Indarto(fb.com/stevenindarto2)                 "
-echo "                              Modified by RadzVPN                            "
+echo "                         Copyright RadzVPN 2019                                 "
+echo "                              Made with 💖 by RadzVPN                            "
 echo "--------------------------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
 echo "Server Included"  | tee -a log-install.txt
@@ -504,5 +502,4 @@ echo "   - Vnstat                  : http://$MYIP:85/vnstat/"  | tee -a log-inst
 echo "   - MRTG                    : http://$MYIP:85/mrtg/"  | tee -a log-install.txt
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "----------- Script Created By Steven Indarto(fb.com/stevenindarto2) ------------"
-echo "------------------------------ Modified by RadzVPN -----------------------------"
+echo "------------------------------ Made with 💖 by RadzVPN -----------------------------"

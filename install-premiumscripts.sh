@@ -1,6 +1,6 @@
 #!/bin/bash
 # Created by http://www.vps-murah.net
-# Modified by Sleak
+# Modified by RadzVPN
 
 cd
 sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.local
@@ -21,7 +21,7 @@ cat > /root/limit.sh <<END3
 END3
 
 cd /usr/local/bin
-wget -O premium-script.tar.gz "https://raw.githubusercontent.com/iamzildjian/PanelxServer-Centos6/master/updates/premium-script.tar.gz"
+wget -O premium-script.tar.gz "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/premium-script.tar.gz"
 tar -xvf premium-script.tar.gz
 rm -f premium-script.tar.gz
 
@@ -77,5 +77,5 @@ cd
 echo " "
 echo " "
 echo "Premium Script Successfully Updates!"
-echo "Modified by Sleak"
+echo "Modified by RadzVPN"
 echo " "

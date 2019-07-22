@@ -2,13 +2,13 @@
 echo "Removing Old Theme"
 rm -rf /home/panel/html/asset
 rm -rf /home/panel/html/view
-rm -rf /home/vps/public_html/tmp/*
-echo "Installing RadzVPN Theme"
+rm -rf /home/panel/html/tmp/*
+echo "Installing RadzVPN Themes"
 cd ~
-mkdir Radz
-cd Radz
+mkdir Sleak
+cd Sleak
 rm -rf *
-wget https://www.dropbox.com/s/7yxkqg64zi5rjno/radz-keen.tgz?dl=0 tar zxvf radz-keen.tgz
+wget https://www.dropbox.com/s/tve2i47aojynj4g/RADZPANEL.tar.gz && tar zxvf keen.tgz
 mv asset /home/panel/html
 mv view /home/panel/html
-echo "Enjoy using RadzVPN Theme"
+echo "Enjoy using RadzVPN Themes"

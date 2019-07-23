@@ -1,33 +1,47 @@
 
-<p><a href="https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6panelx.sh">
-<img src="https://img.shields.io/badge/Centos6-Server-blue.svg">
-</a>
- <a href="https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6servers.sh">
-<img src="https://img.shields.io/badge/Centos6-Panel-brightgreen.svg">
-</a></p>
+<h1 align="center">AutoScriptVPS<img src="https://img.shields.io/badge/Version-2.0-blue.svg"></h1>
 
-# OCS PANEL AND SERVER AUTOSCRIPT
+<p align="center">AutoScriptVPS is made by Hiratechi to minimize the time consumed and user involvement in setting up your VPS <b>with blocking the users to use torrents</b></p>
+<h3 align="center">Supported Linux Distribution</h3>
+<p align="center">
+  <a><img src="https://img.shields.io/badge/Support-Debian%208-red.svg"></a>
+  <a><img src="https://img.shields.io/badge/Support-Debian%209-red.svg"></a>
+</p>
+<h3 align="center">Services</h3>
+<p align="center">
+  <a><img src="https://img.shields.io/badge/Service-OpenSSH-green.svg"></a>
+  <a><img src="https://img.shields.io/badge/Service-Dropbear-green.svg"></a>
+  <a><img src="https://img.shields.io/badge/Service-Stunnel-green.svg"></a>
+  <a><img src="https://img.shields.io/badge/Service-OpenVPN-green.svg"></a>
+  <a><img src="https://img.shields.io/badge/Service-Squid3-green.svg"></a>
+ </p>
+<h3 align="center">Commands</h3>
+<p align="center">
+  <a><img src="https://img.shields.io/badge/Commands-menu-yellow.svg"></a>
+  <a><img src="https://img.shields.io/badge/Commands-accounts-yellow.svg"></a>
+  <a><img src="https://img.shields.io/badge/Commands-options-yellow.svg"></a>
+  <a><img src="https://img.shields.io/badge/Commands-server-yellow.svg"></a>
+ </p>
 
-Server
+<h3 align="center">Installation</h3>
+<h3 align="center">CentOS6x64</h3>
 
-```
-yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6server.sh && chmod +x centos6server.sh && ./centos6server.sh && rm -f centos6server.sh && history -c
-```
+<h3 align="center"><font color="red">Server</h3></font>
+<p align="center">
+<b>bash -c "$(wget https://git.io/fjDfY -qO-)"</b>
+  </p>
+  
+  <h3 align="center"><font color="red">Panel</h3></font>
+<p align="center">
+<b>bash -c "$(wget https://git.io/fjDfs -qO-)"</b>
+  </p>
 
-Panel
-
-```
-yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6panel.sh && chmod +x centos6panel.sh && ./centos6panel.sh && rm -f centos6panel.sh && history -c
-```
-
-Server & Panel
-
-```
-yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6serverxpanel.sh && chmod +x centos6serverxpanel.sh && ./centos6serverxpanel.sh && rm -f centos6serverxpanel.sh && history -c
-```
-
-Theme
-
-```
-wget https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/pinoytheme.sh && chmod +x pinoytheme.sh && ./pinoytheme.sh
-```
+<h3 align="center"><font color="Server | Panel">Panel</h3></font>
+<p align="center">
+<b>bash -c "$(wget https://git.io/fjDfR -qO-)"</b>
+  </p>
+  
+  <h3 align="center"><font color="RadzVPN | Theme">Panel</h3></font>
+<p align="center">
+<b>bash -c "$(wget https://git.io/fjDf0 -qO-)"</b>
+  </p>

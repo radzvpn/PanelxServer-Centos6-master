@@ -38,5 +38,5 @@
   
   <h3 align="center"><font color="red">RadzVPN | Theme</h3></font>
 <p align="center">
-<b>bash -c "$(wget https://git.io/fjDf0 -qO-)"</b>
+<b>bash -c "$(wget https://git.io/fjHmn -qO-)"</b>
   </p>

@@ -4104,7 +4104,7 @@ asciiText () {
 			startline="0"
 			fulloutput=(
 "${c1}                   ..                   %s"
-"${c1}                 .PLTJ.                 %s"
+"${c1}                 .RADZVPN.                 %s"
 "${c1}                <><><><>                %s"
 "       ${c2}KKSSV' 4KKK ${c1}LJ${c4} KKKL.'VSSKK       %s"
 "       ${c2}KKV' 4KKKKK ${c1}LJ${c4} KKKKAL 'VKK       %s"
@@ -4120,7 +4120,7 @@ asciiText () {
 "       ${c3}KKA. 'KKKKK ${c2}LJ ${c1}KKKKK' .4KK       %s"
 "       ${c3}KKSSA. VKKK ${c2}LJ ${c1}KKKV .4SSKK       %s"
 "${c2}                <><><><>                 %s"
-"${c2}                 'MKKM'                  %s"
+"${c2}                 'RADZVPN'                  %s"
 "${c2}                   ''")
 		;;
 

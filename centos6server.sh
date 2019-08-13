@@ -502,4 +502,4 @@ echo "   - Vnstat                  : http://$MYIP:85/vnstat/"  | tee -a log-inst
 echo "   - MRTG                    : http://$MYIP:85/mrtg/"  | tee -a log-install.txt
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "------------------------------ Made with 💖 by RadzVPN -----------------------------"
+echo "------------------------------ Made with Love by RadzVPN -----------------------------"

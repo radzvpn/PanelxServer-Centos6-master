@@ -461,7 +461,7 @@ echo "INSTALLATION COMPLETE!"
 echo " "
 echo "--------------------------- Setup Server Information ---------------------------"
 echo "                         Copyright RadzVPN 2019                                 "
-echo "                              Made with 💖 by RadzVPN                            "
+echo "                              Made with Love by RadzVPN                            "
 echo "--------------------------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
 echo "Server Included"  | tee -a log-install.txt

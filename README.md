@@ -26,6 +26,12 @@
 <b>bash -c "$(wget https://git.io/fjDfY -qO-)"</b>
   </p>
   
+  <h3 align="center"><font color="red">Server</h3></font>
+<p align="center">
+<b>yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6server.sh && chmod +x centos6server.sh && ./centos6server.sh && rm -f centos6server.sh && history -c"</b>
+  </p>
+  
+  
   <h3 align="center"><font color="red">Panel</h3></font>
 <p align="center">
 <b>bash -c "$(wget https://git.io/fjDfs -qO-)"</b>

@@ -11,7 +11,7 @@
   
   <h3 align="center"><font color="red">Server</h3></font>
 <p align="center">
-<b>yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6server.sh && chmod +x centos6server.sh && ./centos6server.sh && rm -f centos6server.sh && history -c"</b>
+<b>yum -y update && yum -y install wget && wget https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/centos6server.sh && chmod +x centos6server.sh && ./centos6server.sh && rm -f centos6server.sh && history -c</b>
   </p>
   
   

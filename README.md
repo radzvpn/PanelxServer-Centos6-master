@@ -1,5 +1,5 @@
 
-<h1 align="center">Re'Modified by Radz</h1>
+<h1 align="center">Modified by Radz</h1>
 
 <p align="center">Supported for Built in OpenVPN Modem 936</b></p>
 <h3 align="center">CentOS6x64</h3>

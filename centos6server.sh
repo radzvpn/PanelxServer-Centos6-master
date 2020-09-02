@@ -1,6 +1,6 @@
 #!/bin/bash
 # Created by https://www.hostingtermurah.net
-# Modified by RadzVPN
+# Re'Modified by RadzVPN
 
 #Requirement
 if [ ! -e /usr/bin/curl ]; then
@@ -460,8 +460,8 @@ echo " "
 echo "INSTALLATION COMPLETE!"
 echo " "
 echo "--------------------------- Setup Server Information ---------------------------"
-echo "                         Copyright RadzVPN 2019                                 "
-echo "                              Made with Love by RadzVPN                            "
+echo "                         Copyright RadzVPN 2020                                 "
+echo "                              RADZ                           "
 echo "--------------------------------------------------------------------------------"
 echo ""  | tee -a log-install.txt
 echo "Server Included"  | tee -a log-install.txt
@@ -502,4 +502,4 @@ echo "   - Vnstat                  : http://$MYIP:85/vnstat/"  | tee -a log-inst
 echo "   - MRTG                    : http://$MYIP:85/mrtg/"  | tee -a log-install.txt
 echo "   - Installation Log        : cat /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "------------------------------ Made with Love by RadzVPN -----------------------------"
+echo "------------------------------ RADZ -----------------------------"

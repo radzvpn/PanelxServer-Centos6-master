@@ -204,16 +204,20 @@ cd
 
 # configure openvpn client config
 cd /etc/openvpn/
-wget -O /etc/openvpn/1194-client.ovpn "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/open-vpn.conf"
-sed -i $MYIP2 /etc/openvpn/1194-client.ovpn;
+wget -O /etc/openvpn/Mobile.ovpn "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/open-vpn.conf"
+wget -O /etc/openvpn/Modem.ovpn "https://raw.githubusercontent.com/radzvpn/PanelxServer-Centos6-master/master/Modem.conf"
+sed -i $MYIP2 /etc/openvpn/Mobile.ovpn;
+sed -i $MYIP2 /etc/openvpn/Modem.ovpn;
 PASS=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 15 | head -n 1`;
 useradd -M -s /bin/false Radz
 echo "Radz:$PASS" | chpasswd
 echo "Radz" > pass.txt
 echo "$PASS" >> pass.txt
-tar cf client.tar 1194-client.ovpn pass.txt
+tar cf client.tar Mobile.ovpn pass.txt
+tar cf client.tar Modem.ovpn pass.txt
 cp client.tar /home/vps/public_html/
-cp 1194-client.ovpn /home/vps/public_html/
+cp Mobile.ovpn /home/vps/public_html/
+cp Modem.ovpn /home/vps/public_html/
 cd
 
 #install PPTP
